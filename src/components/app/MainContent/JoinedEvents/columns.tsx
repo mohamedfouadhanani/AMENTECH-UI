@@ -47,7 +47,9 @@ export const columns: ColumnDef<Event>[] = [
 						alt="placeholder"
 						className="w-6 h-fit rounded-full"
 					/>
-					<span>{row.getValue("name")}</span>
+					<span className="whitespace-normal break-words">
+						{row.getValue("name")}
+					</span>
 				</div>
 			);
 		},
