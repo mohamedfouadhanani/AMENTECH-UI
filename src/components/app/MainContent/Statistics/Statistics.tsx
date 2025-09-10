@@ -10,9 +10,9 @@ import Distance from "../../../../assets/distance.png";
 
 function Statistics() {
 	return (
-		<section className="space-y-4">
+		<section className="space-y-4 mb-4">
 			<h1 className="font-bold">Statistics</h1>
-			<section className="w-full space-y-4 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-4">
+			<section className="w-full space-y-4 md:space-y-0 md:grid md:grid-cols-2 md:gap-4">
 				<StatCard
 					stat="Cash"
 					icon={<Wallet />}
@@ -29,7 +29,7 @@ function Statistics() {
 					linkText="Transaction history"
 				/>
 			</section>
-			<section className="space-y-4 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-4">
+			<section className="space-y-4 md:space-y-0 md:grid md:grid-cols-4 md:gap-4">
 				<StatCard
 					stat="Daily goals"
 					icon={<img src={Goals} alt="Goals" />}

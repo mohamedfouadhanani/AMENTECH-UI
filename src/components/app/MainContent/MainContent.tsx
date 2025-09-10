@@ -1,9 +1,10 @@
 import BigAlert from "./BigAlert";
+import JoinedEvents from "./JoinedEvents/JoinedEvents";
 import Statistics from "./Statistics/Statistics";
 
 function MainContent() {
 	return (
-		<main className="p-4">
+		<main className="p-4 w-screen lg:w-full">
 			<BigAlert
 				className="mb-4"
 				title="This user has been banned by the pokfit support team."
@@ -14,6 +15,8 @@ function MainContent() {
 			</BigAlert>
 
 			<Statistics />
+
+			<JoinedEvents />
 		</main>
 	);
 }
