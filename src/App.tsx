@@ -1,13 +1,19 @@
 import AppSidebar from "./components/app/Sidebar/Sidebar";
+import TopBar from "./components/app/TopBar/TopBar";
 import { SidebarTrigger, useSidebar } from "./components/ui/sidebar";
 
 function App() {
 	let { isMobile } = useSidebar();
 
 	return (
-		<main>
+		<main className="flex w-full">
 			<AppSidebar></AppSidebar>
-			<section>{isMobile && <SidebarTrigger></SidebarTrigger>}</section>
+			<section className="flex-1 bg-gray-50">
+				{isMobile && (
+					<SidebarTrigger className="absolute z-10"></SidebarTrigger>
+				)}
+				<TopBar />
+			</section>
 		</main>
 	);
 }
