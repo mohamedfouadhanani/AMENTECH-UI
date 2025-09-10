@@ -7,11 +7,15 @@ import { Sidebar, SidebarContent } from "../../ui/sidebar";
 import { ChevronDown, Users } from "lucide-react";
 import Element from "./Element";
 
+import POKFIT from "../../../assets/POKFIT..png";
+
 function AppSidebar() {
 	return (
 		<Sidebar className="!border-r-0">
 			<SidebarContent className="p-4 space-y-8 bg-white">
-				<h1 className="text-center font-bold text-2xl block">POKFIT.</h1>
+				<h1 className="font-bold text-2xl flex items-center justify-center">
+					<img src={POKFIT} alt="logo" />
+				</h1>
 				<Collapsible className="space-y-2">
 					<CollapsibleTrigger className="text-sm flex items-center justify-between space-x-2 w-full bg-blue-400 text-white p-2 rounded-md">
 						<Users className="h-6" />
