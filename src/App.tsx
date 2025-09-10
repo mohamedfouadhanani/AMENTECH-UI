@@ -1,3 +1,4 @@
+import MainContent from "./components/app/MainContent/MainContent";
 import AppSidebar from "./components/app/Sidebar/Sidebar";
 import TopBar from "./components/app/TopBar/TopBar";
 import { SidebarTrigger, useSidebar } from "./components/ui/sidebar";
@@ -13,6 +14,7 @@ function App() {
 					<SidebarTrigger className="absolute z-10"></SidebarTrigger>
 				)}
 				<TopBar />
+				<MainContent />
 			</section>
 		</main>
 	);
