@@ -1,9 +1,5 @@
 import AppSidebar from "./components/app/Sidebar/Sidebar";
-import {
-	SidebarProvider,
-	SidebarTrigger,
-	useSidebar,
-} from "./components/ui/sidebar";
+import { SidebarTrigger, useSidebar } from "./components/ui/sidebar";
 
 function App() {
 	let { isMobile } = useSidebar();
