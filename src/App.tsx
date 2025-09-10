@@ -9,7 +9,7 @@ function App() {
 	return (
 		<main className="flex w-full">
 			<AppSidebar></AppSidebar>
-			<section className="flex-1 bg-gray-50">
+			<section className="flex-1 bg-gray-100">
 				{isMobile && (
 					<SidebarTrigger className="absolute z-10"></SidebarTrigger>
 				)}
