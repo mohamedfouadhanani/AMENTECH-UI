@@ -1,9 +1,19 @@
+import AppSidebar from "./components/app/Sidebar/Sidebar";
+import {
+	SidebarProvider,
+	SidebarTrigger,
+	useSidebar,
+} from "./components/ui/sidebar";
+
 function App() {
-  return (
-    <>
-      <h1 className='text-3xl text-blue-500'>Hello, AMENTECH</h1>
-    </>
-  )
+	let { isMobile } = useSidebar();
+
+	return (
+		<main>
+			<AppSidebar></AppSidebar>
+			<section>{isMobile && <SidebarTrigger></SidebarTrigger>}</section>
+		</main>
+	);
 }
 
-export default App
+export default App;
