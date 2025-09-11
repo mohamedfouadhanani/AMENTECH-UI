@@ -4,7 +4,7 @@ function StatCard({ stat, icon, value, link, linkText, className }: any) {
 			className={`bg-white p-4 w-full ${className} flex flex-col justify-between rounded-md`}
 		>
 			<section className="mb-4 flex justify-between items-center">
-				<span className="text-sm text-stone-700">{stat}</span>
+				<span className="text-sm text-gray-500 font-semibold">{stat}</span>
 				<span>{icon}</span>
 			</section>
 			<section className="flex justify-between items-center">

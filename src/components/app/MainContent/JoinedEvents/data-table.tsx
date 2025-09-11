@@ -93,7 +93,7 @@ export function DataTable<TData, TValue>({
 						{table.getHeaderGroups().map((headerGroup) => (
 							<TableRow key={headerGroup.id}>
 								{headerGroup.headers.map((header) => (
-									<TableHead key={header.id} className="font-bold">
+									<TableHead key={header.id} className="font-bold text-center">
 										{header.isPlaceholder
 											? null
 											: flexRender(
@@ -113,7 +113,10 @@ export function DataTable<TData, TValue>({
 									data-state={row.getIsSelected() && "selected"}
 								>
 									{row.getVisibleCells().map((cell) => (
-										<TableCell key={cell.id} className="text-xs">
+										<TableCell
+											key={cell.id}
+											className="text-xs text-center text-gray-500"
+										>
 											{flexRender(
 												cell.column.columnDef.cell,
 												cell.getContext()
@@ -126,7 +129,7 @@ export function DataTable<TData, TValue>({
 							<TableRow>
 								<TableCell
 									colSpan={columns.length}
-									className="h-24 text-center"
+									className="h-24 text-center text-gray-500"
 								>
 									No results.
 								</TableCell>

@@ -29,7 +29,7 @@ function AppSidebar() {
 	return (
 		<Sidebar className="!border-r-0">
 			<SidebarContent className="p-4 space-y-8 bg-white">
-				<h1 className="font-bold text-2xl flex items-center justify-center">
+				<h1 className="font-bold text-2xl flex items-center justify-center mt-4">
 					<img src={POKFIT} alt="logo" />
 				</h1>
 				<Collapsible open={open} onOpenChange={setOpen} className="space-y-2">
