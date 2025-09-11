@@ -10,7 +10,7 @@ function Info({ title, value, children }: any) {
 
 export default function UserInfoDetails() {
 	return (
-		<section className="grid grid-cols-3 gap-4 flex-1">
+		<section className="py-4 lg:py-0 space-y-2 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-4 whitespace-nowrap lg:w-6/12">
 			<Info title="Created" value="Nov 22, 2022" />
 			<Info title="Email" value="mohamed@gmail.com" />
 			<Info title="Gender" value="Male" />

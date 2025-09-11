@@ -11,7 +11,7 @@ function Achievement({ src, alt, label }: any) {
 
 export default function Achievements() {
 	return (
-		<section className="flex-1 space-y-4">
+		<section className="space-y-4 lg:w-3/12 pt-4 lg:pt-0">
 			<span className="font-bold text-xs block">Achievement</span>
 			<section className="flex items-center space-x-4">
 				<Achievement
