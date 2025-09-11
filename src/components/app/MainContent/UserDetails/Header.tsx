@@ -57,10 +57,10 @@ function Header() {
 							</section>
 							<hr />
 							<section className="flex flex-col space-y-2 p-2 text-xs">
-								<span className="p-2 hover:bg-gray-50 rounded-md hover:cursor-pointer">
+								<span className="font-semibold p-2 hover:bg-gray-50 rounded-md hover:cursor-pointer">
 									Contact
 								</span>
-								<span className="p-2 hover:bg-gray-50 rounded-md hover:cursor-pointer">
+								<span className="font-semibold p-2 hover:bg-gray-50 rounded-md hover:cursor-pointer">
 									Unban
 								</span>
 							</section>
