@@ -5,7 +5,7 @@ import UserDetails from "./UserDetails/UserDetails";
 
 function MainContent() {
 	return (
-		<main className="p-4 w-screen lg:w-full">
+		<main className="p-4 w-screen lg:w-full border-l border-t border-gray-200">
 			<BigAlert
 				className="mb-4"
 				title="This user has been banned by the pokfit support team."

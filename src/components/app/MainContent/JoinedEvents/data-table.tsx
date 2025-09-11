@@ -140,7 +140,7 @@ export function DataTable<TData, TValue>({
 			</div>
 
 			{/* pagination */}
-			<div className="flex items-center justify-between px-6 pb-2">
+			<div className="flex items-center justify-between px-6 pb-2 !bg-gray-100 -mt-2 pt-2">
 				<section>
 					<span className="text-sm font-semibold text-gray-500">
 						Showing{" "}
@@ -156,7 +156,8 @@ export function DataTable<TData, TValue>({
 						of {table.getFilteredRowModel().rows.length}
 					</span>
 				</section>
-				<section>
+
+				<section className="">
 					<Button
 						className="rounded-r-none"
 						variant="outline"

@@ -11,7 +11,7 @@ import Distance from "../../../../assets/distance.png";
 function Statistics() {
 	return (
 		<section className="space-y-4 mb-4">
-			<h1 className="font-bold">Statistics</h1>
+			<h1 className="font-bold text-xl">Statistics</h1>
 			<section className="w-full space-y-4 md:space-y-0 md:grid md:grid-cols-2 md:gap-4">
 				<StatCard
 					stat="Cash"
