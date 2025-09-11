@@ -10,6 +10,19 @@ import Element from "./Element";
 import POKFIT from "../../../assets/POKFIT..png";
 import { useState } from "react";
 
+function SubElements({ label, className }: any) {
+	return (
+		<div className="relative flex items-center">
+			<div className="absolute left-2 w-8 h-0.5 bg-gray-300"></div>
+			<Element
+				className={`font-bold pl-6 text-gray-500 hover:text-gray-700 ${className}`}
+			>
+				{label}
+			</Element>
+		</div>
+	);
+}
+
 function AppSidebar() {
 	const [open, setOpen] = useState(true);
 
@@ -29,25 +42,13 @@ function AppSidebar() {
 					<CollapsibleContent className="relative flex flex-col space-y-4 text-xs">
 						<div className="absolute left-2 top-0 h-11/12 w-0.5 bg-gray-300"></div>
 
-						<div className="relative flex items-center">
-							<div className="absolute left-2 w-8 h-0.5 bg-gray-300"></div>
-							<Element className="font-bold pl-6">All Users</Element>
-						</div>
+						<SubElements label="All Users" className="!text-black" />
 
-						<div className="relative flex items-center">
-							<div className="absolute left-2 w-8 h-0.5 bg-gray-300"></div>
-							<Element className="pl-6">Statistics</Element>
-						</div>
+						<SubElements label="Statistics" />
 
-						<div className="relative flex items-center">
-							<div className="absolute left-2 w-8 h-0.5 bg-gray-300"></div>
-							<Element className="pl-6">Transactions</Element>
-						</div>
+						<SubElements label="Transactions" />
 
-						<div className="relative flex items-center">
-							<div className="absolute left-2 w-8 h-0.5 bg-gray-300"></div>
-							<Element className="pl-6">Survey</Element>
-						</div>
+						<SubElements label="Surveys" />
 					</CollapsibleContent>
 				</Collapsible>
 			</SidebarContent>
