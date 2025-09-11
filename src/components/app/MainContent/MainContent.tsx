@@ -1,6 +1,7 @@
 import BigAlert from "./BigAlert";
 import JoinedEvents from "./JoinedEvents/JoinedEvents";
 import Statistics from "./Statistics/Statistics";
+import UserDetails from "./UserDetails/UserDetails";
 
 function MainContent() {
 	return (
@@ -13,6 +14,8 @@ function MainContent() {
 				by <span className="font-bold">@mohamed</span> from the support team,
 				reason : <br></br> -Voilation of <span className="font-bold">T&C</span>.
 			</BigAlert>
+
+			<UserDetails />
 
 			<Statistics />
 
